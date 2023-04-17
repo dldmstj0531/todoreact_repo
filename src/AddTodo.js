@@ -21,7 +21,7 @@ class AddTodo extends React.Component {
  
     enterKeyEventHandler =(e)=>{ 
         if(e.key =='Enter'){ 
-            this.onButtonClick(); 
+            this.onButtonClick();
         } 
     } 
     render(){ 
@@ -30,7 +30,7 @@ class AddTodo extends React.Component {
                 <Grid container>
                     <Grid xs={11} md={11} item style={{paddingRight:16}}>
                         <TextField 
-                        placehoder="Add Todo here" 
+                        placehoder="Add Todo here"
                         fullWidth 
                         onChange={this.onInputChange}
                         value={this.state.item.title}
@@ -53,4 +53,3 @@ class AddTodo extends React.Component {
     }
 }
 export default AddTodo;
-
